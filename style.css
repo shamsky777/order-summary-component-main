@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+
+    --verypaleblue: hsl(225, 100%, 98%);
+    --desaturatedblue: hsl(224, 23%, 55%);
+    --darkblue: hsl(223, 47%, 23%);
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: var(--paleblue);
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right: 0;
+}
+
+main {
+    position: relative;
+
+    width: 350px;
+    height: 650px;
+
+    margin: 0 auto;
+    top: 15%;
+
+    border-radius: 15px;
+
+    background-color: var(--verypaleblue);
+}
+
+.section-one {
+    width: 350px;
+    height: 180px;
+
+    border-radius: 15px 15px 0px 0px;
+
+    margin-bottom: 25px;
+}
+
+.section-one img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+/* ForText */
+
+.section-two-forText {
+    width: 100%;
+    height: 150px;
+
+    text-align: center;
+}
+
+.section-two-forText h2 {
+    color: var(--darkblue);
+
+    font-weight: 700;
+}
+
+.section-two-forText p {
+    font-size: 16px;
+    color: var(--desaturatedblue);
+
+    font-weight: 500;
+}
+
+/* ForPlan */
+
+.section-three-forPlan {
+    width: 80%;
+    height: 80px;
+
+    display: flex;
+    margin: 0 auto;
+
+    border-radius: 15px;
+    
+    background-color: hsl(226, 35%, 93%);
+}
+
+.section-three-forPlan img {
+    position: relative;
+    width: 48px;
+    height: 48px;
+
+    float: left;
+
+    margin-left: 12px;
+    margin-top: 15px;
+}
+
+.section-three-forText {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.section-three-forText p {
+    color: var(--darkblue);
+    font-weight: 900;
+}
+
+.section-three-forText font {
+    color: var(--desaturatedblue);
+    font-weight: 300;
+}
+
+.section-three-forChangeBtn {
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+.section-three-forChangeBtn p{
+    border-bottom: 2px solid var(--brightblue);
+
+    color: var(--brightblue);
+    font-weight: 900;
+}
+
+.section-four-forPaymentBtn {
+    position: relative;
+
+    left: 10%;
+    top: 40px;
+
+    cursor: pointer;
+}
+
+.section-four-forPaymentBtn button {
+    width: 80%;
+    height: 45px;
+
+    background-color: var(--brightblue);
+
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.section-four-forPaymentBtn button:hover {
+    background-color: rgb(114, 76, 196);
+}
+
+.section-four-forPaymentBtn p {
+    color: var(--verypaleblue);
+
+    font-weight: 700;
+}
+
+.section-five-forCancelOrderBtn {
+    position: relative;
+    width: 100%;
+    
+    top: 80px;
+
+    text-align: center;
+}
+
+.section-five-forCancelOrderBtn button {
+    cursor: pointer;
+
+    border: none;
+
+    background-color: var(--verypaleblue);
+}
+
+.section-five-forCancelOrderBtn p {
+    color: var(--desaturatedblue);
+
+    font-weight: 700;
+    
+    transition: 0.3s;
+}
+
+.section-five-forCancelOrderBtn p:hover {
+    color: var(--darkblue);
+}
